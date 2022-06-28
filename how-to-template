@@ -1,0 +1,28 @@
+---
+title: Start with an action verb. Examples: Add a payment method. Less than 45 characters (including spaces)
+meta_title: If the 'title' is longer than 45 characters (including spaces), add a shorter 'meta_title' to the frontmatter. If not, delete.
+description: Start with an action verb. Examples: Build, Learn, Discover. Less than 155 characters (including spaces)
+type: how_to
+product: Add the product name. Example: Universal Checkout, Workflows, Commerce Ops
+keyword_tag: Add keywords that the user could use to search for this topic. Example: payment method, payment processor
+---
+
+Provide an introduction to this topic (no heading). This introduction should provide context to the reader, tell them what they are going to achieve. And how this task fits into the wider user journey.
+
+If the user needs to understand this task with some conceptual information, link to that page. If the information fits in a single paragraph, include it on this page.
+
+## Before you start
+Mention all the pre-requisites to complete this task. Some examples are:
+- Installing specific libraries, packages, or programming environments.
+- Previous steps. If this task is preceded by a previous task, link to that task.
+
+## Step-by-step instructions
+This is the star of the show! 
+- Break down larger tasks into sub-tasks, each with their own heading.
+- If the task can be done in more than one way, mention steps under separate sub-headings.
+
+## Next steps (if applicable)
+If there are topics that _build_ on top of these instructions or there are next steps, link to those topics. Make sure to mention the relevance of those topics to this current task or vice versa.
+
+## See also (if applicable)
+Link topics that are related to the current topic. Let the reader know why this link is relevant to the current topic.
