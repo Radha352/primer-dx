@@ -7,11 +7,13 @@ keyword_tag: payment method, <connection_name>, universal checkout
 ---
 
 <!---
+The markdown version of this template is accessible on my [Git repo](https://github.com/Radha352/primer-dx/edit/main/payment-method-template) - Radha352 > primer-dx > payment-method-template.
+
 1. Use this template as a guidance to author this topic. 
 2. As the author, you have full creative license so please feel free to suggest improvements and we'll update this template for the benefit of all. 
 3. The examples may lend some inspiration to your words. We'd really appreciate any additions to these examples.
 4. If not using a suggested heading, comment it out for now. For example, nothing to say about Troubleshooting? Just comment out that section and we can use it when we're ready.
-5. The markdown for tags are to be updated with Primer custom tags. Example: the {:.alert .alert-info} - Note tag has been added for illustration but may differ by Primer standards.
+5. The markdown for tags are to be updated with Primer custom tags. Example: the {:.alert .alert-info} - Note tag has been added for illustration but may need to be updated to Primer custom tags.
 --->
 
 Provide an introduction to this topic (no heading). This introduction should provide context to the reader, tell them what they are going to achieve. And how this task fits into the wider user journey.
@@ -27,10 +29,15 @@ Examples of information to include:
 
 - Visit the <connection_name> [Sample Data Page](link_url) to test and compare the integration with the x Playground environment.
 
+- Learn more about the supported countries and currencies by visiting [<connection_name> Documentation](url_link).
+
+- To enable Primer's <connection_name> integration, you need a payment processor. See available payment processor's [here](url_link)
+
 - To enable Primer's <connection_name> integration, visit 'Connections' in the [Primer Dashboard](https://sandbox-dashboard.primer.io/login)
 {:.alert .alert-info} - Note tag
 
-- Learn more about the supported countries and currencies by visiting [<connection_name> Documentation](url_link).
+<<if the steps are the exact same for all connections, we could create a helper to re-use this content. 
+Do we want to list the steps on this page? After the "Select your SDK section" We could design it so there is title and user clicks to expand this section. 
 --->
 
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -38,16 +45,16 @@ Examples of information to include:
 1. Mention all the pre-requisites to complete this task. 
 Some examples are:
 - Installing specific libraries, packages, or programming environments.
-- Previous steps. If this task is preceded by a previous task, link to that task.
+- Previous steps. If this task is preceded by a previous (larger) task, link to that task page.
 
 2. Mention information necessary for this task.
 3. Use the {:.alert .alert-info} (Note) tag to call out important information.
 
-
+<!---
 Examples of what you could include:
 - <connection_name> requires the following data to work. Ensure to pass them in the [client session](url_link):
-  - `data_name_1`
-  - `data_name_2`
+  - `parameter_1`
+  - `parameter_2`
 
 - The <connection_name> vaulted token contains:
   - `name`: description
@@ -55,18 +62,21 @@ Examples of what you could include:
 - The <connection_name> requires passing some information when creating a client session. Ensure that the following properties are provided:
   - `property name 1`
   - `property name 2`
-
+--->
 
 -----------------------------------------------------------------------------------------------------------------------------------
 ## Select an SDK
 This is the star of the show! 
-- Break down larger tasks into sub-tasks, each with their own heading. [Headings can be setup to generate URLs and makes it easier for us to share information with our customers]
-- If the task can be done in more than one way, mention steps under separate sub-headings. Ensure to elaborate this in an introduction.
+- Break down larger tasks into sub-tasks, each with their own heading. [Headings can be setup to generate URLs, which then makes it easier for us to share specific information with our customers]
+- If the task can be done in more than one way, mention steps under separate sub-headings. 
+- _Ensure to give an overview of steps in an introduction_.
 
+
+<!--
 Example flow of information for this topic:
 
-The Primer <connection_name> integration has the following SDKs available:
-- Web SDK - Universal Checkout
+The following SDKs are available for the Primer <connection_name> integration. Select the right one for your platform: [link each in the list to their sections, as in first SDK listed below]
+- [Web SDK - Universal Checkout](#web-sdk-universal-checkout)
 - Web SDK - Checkout Components
 - iOS SDK
 - iOS SDK - Saved payment method
@@ -75,25 +85,35 @@ The Primer <connection_name> integration has the following SDKs available:
 -  React Native SDK
 
 To understand the difference between Universal Checkout, Checkout Components, and saved payment method, see [types of Primer SDKs ](url_link).
+<<Capitalize or not to capitalize these types? To be checked and updated here. Also to be added to an automated checker.>>
 
-If you have already acquired customer information, follow the steps in the [pre-filling customer information](#pre-filling customer information) section on this page. If this means we start with that section, we will let them know here of the why and what.
+If you have already acquired customer information, follow the steps in the [pre-filling customer information](#pre-filling customer information) section on this page. 
+[What does it mean to have acquired customer information. If large conceptual topic, separate page. If not, a para to explain this in the template. does this mean user should follow these steps instead of getting started with SDKs above? Let's provide more context for user.]
 
-To explore customization, see the [customization](#customization) section on this page. You could customize buttons and forms, useful for...
+After you complete the above steps, you can then explore how to [customize your checkout](#customization) for select features like [_buttons and forms_](replace with features possible for this topic). 
+
 
 
 ### Web SDK - Universal Checkout
 
 #### Pre-requisites for Web SDK - Universal Checkout:
 - Ensure to pass the following in the [client session] (link URL):
-  - At least `name`: description
+  - `name`: description
 - In addition, pass `name`: description
 
 To initialize the Web SDK - Universal Checkout, do the following:
 1. Render <connection_name> by ensuring that ... [Example: the webpage is accessed through a secure `HTTPS` connection
-   ```insert sample code here```
+   ```
+    insert sample code here
+    ```
 
 2. Customize the page using the following code as a sample. Provide more information on why and how: 
-   ```insert sample code here```
+   ```
+   insert sample code here
+   ```
+
+-->
+
 
 -------------------------------------------------------------------------------------------------------------------------
 ## Pre-filling customer information
@@ -109,7 +129,10 @@ If you have already acquired customer information, use one of the following SDK'
 - Android SDK
 - Android SDK - Saved payment method
 -  React Native SDK
---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
 ## Customization 
 
 Explore the customization available for your SDK.
@@ -156,6 +179,6 @@ Solution:
 ## Next steps (if applicable)
 If there are topics that _build_ on top of these instructions or there are next steps, link to those topics. Make sure to mention the relevance of those topics to this current task or vice versa.
 
---------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
 ## See also (if applicable)
 Link topics that are related to the current topic. Let the reader know why this link is relevant to the current topic.
